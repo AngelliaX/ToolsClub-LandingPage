@@ -1,0 +1,7 @@
+các button chính #5e2ced => #ff4000
+viền của các button: 0d6efd -> ff001e
+các dòng chữ (tiêu đề, tên tool) 263a5d -> 525252
+
+FAQ:
+khung #e3e9ff => f5aa71
+chữ 3532bf -> ff4000
