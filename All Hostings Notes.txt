@@ -3,9 +3,9 @@
 Truoc khi submit len github backend + frontend
 ============================================================================================================
 1. Xoa het console.log neu co (ctrl + shift + f)
-2. Thay doi axios url trong frontend
-3. thay doi lai code cookie jwt userController
-
+2. frontend: Thay doi axios url trong
+3. backend: thay doi lai code cookie jwt userController
+4. semrush: app.listen();
 
 
 
