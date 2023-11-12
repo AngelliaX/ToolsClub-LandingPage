@@ -8,9 +8,9 @@ Truoc khi submit len github backend + frontend
 4. semrush: app.listen();
 5. frontend: nếu có dùng payos cho TESTBUG thì đổi lại FETCH_KEY, X_CLIENT_ID & X_API_KEY  trong .env
 
-những thứ cần check khi update lên render lần tiếp theo:
-- .env của frontend, liệu có nhận k hay phải add vào env var ở render, chỉ cần up code lên github, nếu paymentfirst.js chạy bthg tức là được, k thì add env vào render
-
+### Cần fix sớm:
+1. fix schema permissions
+2. fix code webhook, thêm signature vào
 
 
 
