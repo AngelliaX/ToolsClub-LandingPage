@@ -1,12 +1,13 @@
-.goog-logo-link,.goog-te-gadget span {
+/*.goog-logo-link,.goog-te-gadget span {
     display:none !important;
-}
+}*/
 
-.goog-te-gadget {
+/*.goog-te-gadget {
     font-size: 0px !important;
-}
+}*/
+    
 
-body > .skiptranslate {
+body > div.skiptranslate{
     display: none;
 }
 

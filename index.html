@@ -78,8 +78,7 @@ color: #fff; }
 </div>
 
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-<!-- <a href="javascript:void(0)"><div id="google_translate_element"></div>
-</a> -->
+<div class="btn btn-primary cs-btn__text" id="google_translate_element"></div>
 <a href="https://app.toolsclub.net/"><button type="button" class="btn btn-primary cs-btn__text">Đăng Nhập</button>
 </a>
 <a href="https://app.toolsclub.net/signup"><button type="button" class="btn btn-primary cs-btn__text">Đăng ký</button>
@@ -329,7 +328,7 @@ color: #fff; }
 
     <script>
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'en,vi'}, 'google_translate_element');
+            new google.translate.TranslateElement({pageLanguage: 'vi',layout: google.translate.TranslateElement.InlineLayout.SIMPLE, includedLanguages: 'en,vi,zh-CN,hi,es,ru'}, 'google_translate_element');
         }
     </script>
     <script src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
