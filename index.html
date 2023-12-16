@@ -391,11 +391,6 @@
           document.cookie = cookieName + '=' + cookieValue + ';' + expires + ';path=/';
         }
 
-        function deleteCookie(cookieName) {
-          document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.toolsclub.net`;
-          document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=www.toolsclub.net`;
-        }
-
         fetch('https://ipinfo.io/json')
           .then(response => response.json())
           .then(data => {
@@ -403,7 +398,7 @@
             if(data?.country != "VN"){
               setCookie('googtrans', '/vi/en', 7);
             }else{
-              deleteCookie('googtrans');
+              setCookie('googtrans', 'đừng tìm lung tung', 7);
             }
             console.log(`Your Country: ${data.country}, Your IP: ${data.ip}`);
           })
