@@ -392,7 +392,10 @@
         }
 
         function deleteCookie(cookieName) {
-          document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+          const d = new Date();
+          d.setTime(d.getTime() - (24 * 60 * 60 * 1000)); // Set expiry to a past date
+          const expires = 'expires=' + d.toUTCString();
+          document.cookie = cookieName + '=; ' + expires + '; path=/';
         }
 
         fetch('https://ipinfo.io/json')
@@ -402,7 +405,7 @@
             if(data?.country != "VN"){
               setCookie('googtrans', '/vi/en', 7);
             }else{
-              setCookie('googtrans', '/vi/en', -1);
+              deleteCookie('googtrans';
             }
             console.log(`Your Country: ${data.country}, Your IP: ${data.ip}`);
           })
