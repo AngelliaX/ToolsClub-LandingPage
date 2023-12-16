@@ -71,7 +71,7 @@
               </a>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <div class="" id="google_translate_element"></div>
+              <div style="display:none" class="" id="google_translate_element"></div>
               <a href="https://app.toolsclub.net/">
                 <button type="button" class="btn btn-primary cs-btn__text">Đăng Nhập</button>
               </a>
@@ -384,17 +384,35 @@
       </script>
       
       <script>
-          // Fetch the country information using ipinfo.io
-          fetch('https://ipinfo.io/json')
-            .then(response => response.json())
-            .then(data => {
-              // Update the paragraph with the obtained country
-              console.log(`Your Country: ${data.country}, Your IP: ${data.ip}`);
-            })
-            .catch(error => {
-              console.log('Error fetching country:', error);
-            });
-        </script>
+        function setCookie(cookieName, cookieValue, expirationDays) {
+          const d = new Date();
+          d.setTime(d.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+          const expires = 'expires=' + d.toUTCString();
+          document.cookie = cookieName + '=' + cookieValue + ';' + expires + ';path=/';
+        }
+
+        function deleteCookie(cookieName) {
+          document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+        }
+
+        // Usage: setCookie('cookieName', 'cookieValue', numberOfDaysUntilExpiration);
+        setCookie('googtrans', '/vi/en', 7);
+
+        fetch('https://ipinfo.io/json')
+          .then(response => response.json())
+          .then(data => {
+            // Update the paragraph with the obtained country
+            if(data?.country != "VN"){
+              setCookie('googtrans', '/vi/en', 7);
+            }else{
+              deleteCookie('googtrans');
+            }
+            console.log(`Your Country: ${data.country}, Your IP: ${data.ip}`);
+          })
+          .catch(error => {
+            console.log('Error fetching country:', error);
+          });
+      </script>
 
       <script>
         function googleTranslateElementInit() {
@@ -404,15 +422,6 @@
             includedLanguages: 'en,vi,zh-CN,hi,es,ru'
           }, 'google_translate_element');
         }
-        function setCookie(cookieName, cookieValue, expirationDays) {
-          const d = new Date();
-          d.setTime(d.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
-          const expires = 'expires=' + d.toUTCString();
-          document.cookie = cookieName + '=' + cookieValue + ';' + expires + ';path=/';
-        }
-
-        // Usage: setCookie('cookieName', 'cookieValue', numberOfDaysUntilExpiration);
-        setCookie('googtrans', '/vi/en', 7);
       </script>
 
       <script src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
