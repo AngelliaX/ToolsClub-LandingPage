@@ -384,12 +384,6 @@
       </script>
       
       <script>
-        function setCookie(cookieName, cookieValue, minutes) {
-          const d = new Date();
-          d.setTime(d.getTime() + (minutes * 60 * 1000));
-          const expires = 'expires=' + d.toUTCString();
-          document.cookie = cookieName + '=' + cookieValue + ';' + expires + ';path=/;domain=.toolsclub.net';
-        }
         function createCookie(name, value, days, domain) {
             if (days) {
                 var date = new Date();
@@ -410,10 +404,10 @@
           .then(data => {
             // Update the paragraph with the obtained country
             if(data?.country != "VN"){
-              setCookie('googtrans', '/vi/en', 1);
+              createCookie('googtrans', '/vi/en', 1, '.toolsclub.net');
             }else{
-              eraseCookie("googtrans", ".toolsclub.net"); //erases the .one.om domain cookie
-              eraseCookie("googtrans", ""); //erases the www.one.om domain cookie
+              eraseCookie("googtrans", ".toolsclub.net"); //erases the .toolsclub.net domain cookie
+              eraseCookie("googtrans", ""); //erases the www.toolsclub.net domain cookie
             }
             console.log(`Your Country: ${data.country}, Your IP: ${data.ip}`);
           })
