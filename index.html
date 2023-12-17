@@ -390,6 +390,20 @@
           const expires = 'expires=' + d.toUTCString();
           document.cookie = cookieName + '=' + cookieValue + ';' + expires + ';path=/;domain=.toolsclub.net';
         }
+        function createCookie(name, value, days, domain) {
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                var expires = "; expires=" + date.toGMTString();
+            } else {
+                var expires = "";
+            }
+            document.cookie = name + "=" + value + expires + "; domain=" + domain + "; path=/";
+        }
+
+        function eraseCookie(name, domain) {
+            createCookie(name, "", -1, domain);
+        }
 
         fetch('https://ipinfo.io/json')
           .then(response => response.json())
@@ -398,7 +412,8 @@
             if(data?.country != "VN"){
               setCookie('googtrans', '/vi/en', 1);
             }else{
-              setCookie('googtrans', 'đừng tìm lung tung', 1);
+              eraseCookie("googtrans", ".toolsclub.net"); //erases the .one.om domain cookie
+              eraseCookie("googtrans", ""); //erases the www.one.om domain cookie
             }
             console.log(`Your Country: ${data.country}, Your IP: ${data.ip}`);
           })
