@@ -35,3 +35,7 @@ function googleTranslateElementInit() {
         includedLanguages: 'en,vi,zh-CN,hi,es,ru'
     }, 'google_translate_element');
 }
+
+var googleTranslateScript = document.createElement('script');
+googleTranslateScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+document.body.appendChild(googleTranslateScript);
