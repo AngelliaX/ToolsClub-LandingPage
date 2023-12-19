@@ -1,0 +1,9 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Semrush.com</ShortName>
+<Description>Semrush - online visibility management and content marketing SaaS platform</Description>
+<Url type="text/html" method="get" template="https://www.semrush.com/search/?q={searchTerms}"/>
+<moz:UpdateInterval>7</moz:UpdateInterval>
+<moz:UpdateUrl>
+https://www.semrush.com/__static__/semrush-opensearch.xml
+</moz:UpdateUrl>
+</OpenSearchDescription>
