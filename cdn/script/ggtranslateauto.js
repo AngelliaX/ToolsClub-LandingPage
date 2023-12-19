@@ -22,7 +22,7 @@ fetch('https://ipinfo.io/json')
             eraseCookie("googtrans", ".toolsclub.net");
             eraseCookie("googtrans", "");
         }
-        console.log(`Your Country: ${data.country}, Your IP: ${data.ip}`);
+        console.log(`Your Country: ${data.country}`);
     })
     .catch(error => {
         console.log('Error fetching country:', error);
