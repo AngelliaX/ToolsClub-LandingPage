@@ -583,7 +583,7 @@
     let dy = (Math.random() - 0.5) * 2;
 
     const animate = () => {
-      if (x < 0 - logoWidth || x > parentWidth + logoWidth) dx = -dx;
+      if (x < 0 - logoWidth || x > (parentWidth + logoWidth/3)) dx = -dx;
       if (y < 0 || y > parentHeight) dy = -dy;
 
       x += dx;
