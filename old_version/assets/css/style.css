@@ -2147,11 +2147,7 @@ hr {
     height: 42px;
   }
 }
-12.
-  Scroll
-  up
-  ----------------------------------------------------------------*/
-  #cs-scrollup {
+#cs-scrollup {
   position: fixed;
   bottom: -60px;
   right: 25px;
@@ -3336,7 +3332,7 @@ hr {
   height: 850px;
   overflow: hidden;
   position: relative;
-  background-color: #fbfbfd;
+  background-color: #fff;
 }
 .cs-hero.cs-style1 .container {
   position: inherit;
@@ -4231,7 +4227,7 @@ hr {
 }
 .cs-icon__box.cs-style2 .cs-btn {
   color: #5d6b85;
-  border-color: ;
+  border-color: black;
   width: 100%;
 }
 .cs-icon__box.cs-style2:hover .cs-btn {

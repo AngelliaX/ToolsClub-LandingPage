@@ -1,418 +1,611 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Toolsclub | Mua Chung Tools Hàng Đầu</title>
+    <meta name="author" content="Toolsclub">
+    <meta name="description" content="Toolsclub Là Nơi Mua Chung Tools Semrush, Ahref, Canva. Các Tool SEO, Design, Marketing,... Hàng Đầu" property="og:description">
+    <meta http-equiv="content-language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="toolsclub">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="cdn/logosymbol.png">
-    <title>ToolsClub | Mua Chung Tools</title>
-    <meta name="description" content="Mua Chung Tools Semrush, Ahref, Canva. Các Tool SEO, Design, Marketing,...">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.toolsclub.net/assets/img/root/toolsclub-fav.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.toolsclub.net/assets/img/root/toolsclub-fav.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.toolsclub.net/assets/img/root/toolsclub-fav.png">
+    <link rel="mask-icon" color="#6366f1" href="https://www.toolsclub.net/assets/img/root/toolsclub-fav.png">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="ToolsClub | Mua Chung Tools Chất Lượng">
-    <meta property="og:description" content="Mua Chung Tools Semrush, Ahref, Canva. Các Tool SEO, Design, Marketing,...">
+    <meta property="og:title" content="Toolsclub | Mua Chung Tools Hàng Đầu, Đáng Tin Cậy">
     <meta property="og:url" content="https://www.toolsclub.net/">
-    <meta property="og:image" content="https://www.toolsclub.net/cdn/semrushxtoolsclub.png">
+    <meta property="og:image" content="https://www.toolsclub.net/cdn/toolsclub-banner-vertical.png">
     <meta property="og:locale" content="vi-VN">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.toolsclub.net/cdn/semrushxtoolsclub.png">
-    <meta name="keywords" content="toolsclub, toolsclub login, seo tools, group buy seo tools">
+    <meta name="twitter:image" content="https://www.toolsclub.net/cdn/toolsclub-banner-square.png">
+    <meta name="keywords" content="Toolsclub, Toolsclub login, seo tools, group buy seo tools">
     <meta name="robots" content="index,follow">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/animated-headline.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/ggtrans.css">
-    <style type="text/css">
-      .cs-pricing__table__feature {
-        margin-bottom: 0px;
-         !important;
-        font-weight: bold;
-      }
+    <meta name="theme-color" content="white">
 
-      .khtm {
-        opacity: 50%;
-        text-decoration: line-through;
-      }
+    <script>
+          let date;
+          let hours;
 
-      .btn-primary {
-        background-color: #ff4000;
-        font-weight: 500;
-        margin-left: 30px;
-      }
+          try {
+              // Try to get the client's timezone
+              let timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+              date = new Date(new Date().toLocaleString("en-US", {timeZone: timeZone}));
+          } catch (error) {
+              // If there's an error, use the default timezone of GMT+7
+              date = new Date(new Date().toLocaleString("en-US", {timeZone: "Asia/Jakarta"}));
+          }
+          // Get hours
+          hours = date.getHours();
 
-      .btn-primary:hover {
-        background-color: rgba(94, 44, 237, 0.1);
-        border-color: #ff4000;
-        color: #ff4000;
-      }
+          // Check if it's between 19:00 to 0:00 or 0:00 to 3:00
+          if ((hours >= 19 && hours <= 23) || (hours >= 0 && hours < 3)) {
+              localStorage.setItem('mode', 'dark');
+          } else {
+              localStorage.setItem('mode', 'light');
+          }
 
-      .cs-btn.cs-style1.cs-color6 {
-        background-color: red;
-        color: #fff;
-      }
-    </style>
-    <!-- <script type="31695fcf160b31f8cd9edce9-text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="4d3bcb57-8883-40ce-867b-eb060b3a717d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
+          let mode = window.localStorage.getItem('mode');
+          let root = document.getElementsByTagName('html')[0];
+          
+          if (mode !== undefined && mode === 'dark') {
+              root.classList.add('dark-mode');
+          } else {
+              root.classList.remove('dark-mode');
+          }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css">
+
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="assets/css/homemade.css">
+
+    <style>
+            :root{--ar-primary:#ff4000;--ar-primary-rgb:255, 64, 0;--ar-link-color:#ff4000;--ar-link-hover-color:#e66200;--ar-warning:#000;--ar-warning-rgb:0,0,0;}.btn-primary{--ar-btn-bg:#ff4000;--ar-btn-border-color:#ff4000;--ar-btn-hover-bg:#e66200;--ar-btn-hover-border-color:#e66200;--ar-btn-active-bg:#e66200;--ar-btn-active-border-color:#e66200;--ar-btn-disabled-bg:#ff4000;--ar-btn-disabled-border-color:#ff4000;}.btn-warning{--ar-btn-bg:#000;--ar-btn-border-color:#000;--ar-btn-hover-bg:#000000;--ar-btn-hover-border-color:#000000;--ar-btn-active-bg:#000000;--ar-btn-active-border-color:#000000;--ar-btn-disabled-bg:#000;--ar-btn-disabled-border-color:#000;}.btn-outline-primary{--ar-btn-color:#ff4000;--ar-btn-border-color:#ff4000;--ar-btn-hover-bg:#ff4000;--ar-btn-hover-border-color:#ff4000;--ar-btn-active-bg:#ff4000;--ar-btn-active-border-color:#ff4000;--ar-btn-disabled-color:#ff4000;--ar-btn-disabled-border-color:#ff4000;}.btn-outline-warning{--ar-btn-color:#000;--ar-btn-border-color:#000;--ar-btn-hover-bg:#000;--ar-btn-hover-border-color:#000;--ar-btn-active-bg:#000;--ar-btn-active-border-color:#000;--ar-btn-disabled-color:#000;--ar-btn-disabled-border-color:#000;}
+        </style>
+
+    <script type="ecbeee5df665b5b013cfecc8-text/javascript">
+    <!-- site code -->
+    window.dataLayer = window.dataLayer || [];
+            
+    <!-- end of site code -->
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','UA-176438010-1');</script>
+
   </head>
-  <body>
-    <header class="cs-site__header cs-style1">
-      <div class="cs-main__header">
-        <div class="container">
-          <div class="cs-main__header__in">
-            <div class="cs-main__header__left">
-              <a class="cs-site__branding" href="index.html">
-                <img src="./cdn/toolsclub.png" alt="">
-              </a>
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <div style="display:none" class="" id="google_translate_element"></div>
-              <a href="https://app.toolsclub.net/">
-                <button type="button" class="btn btn-primary cs-btn__text">Đăng Nhập</button>
-              </a>
-              <a href="https://app.toolsclub.net/signup">
-                <button type="button" class="btn btn-primary cs-btn__text">Đăng ký</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="cs-hero cs-style1 cs-center">
-      <div class="container">
-        <div class="cs-hero__text wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.3s">
-          <h1 class="cs-hero__title">Mua Chung Tool <br>Uy Tín, Chất Lượng <br>Vượt Trội </h1>
-          <div class="cs-hero__subtitle">👇 Trải nghiệm <b>
-              <span style="color: #ff4000;">miễn phí</span>
-            </b> không giới hạn 100% 👇 </div>
-          <div class="cs-btns cs-style1">
-            <a href="https://toolsclub.net/freetrial" class="free-sample-button cs-btn cs-style1 cs-color1 cs-primary__font">
-              <span class="cs-btn__text">Dùng thử miễn phí!</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="cs-hero__img cs-parallax">
-        <div class="cs-to__right">
-          <img src="assets/img/agency/hero-img.svg" alt="Hero Image">
-        </div>
-      </div>
-      <div class="cs-partical__shape_wrap">
-        <div class="cs-partical__shape cs-shape__position1">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px">
-            <path fill-rule="evenodd" fill="rgb(189, 210, 249)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"></path>
-          </svg>
-        </div>
-        <div class="cs-partical__shape cs-shape__position2">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px">
-            <path fill-rule="evenodd" fill="rgb(238, 118, 115)" d="M7.500,-0.000 C11.642,-0.000 15.000,3.358 15.000,7.500 C15.000,11.642 11.642,15.000 7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.358 3.358,-0.000 7.500,-0.000 Z"></path>
-          </svg>
-        </div>
-        <div class="cs-partical__shape cs-shape__position3">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px">
-            <path fill-rule="evenodd" fill="rgb(54, 97, 193)" d="M7.500,-0.000 C11.642,-0.000 15.000,3.358 15.000,7.500 C15.000,11.642 11.642,15.000 7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.358 3.358,-0.000 7.500,-0.000 Z"></path>
-          </svg>
-        </div>
-        <div class="cs-partical__shape cs-shape__position4">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="10px">
-            <path fill-rule="evenodd" fill="rgb(146, 179, 244)" d="M5.000,-0.000 C7.761,-0.000 10.000,2.238 10.000,5.000 C10.000,7.761 7.761,10.000 5.000,10.000 C2.239,10.000 -0.000,7.761 -0.000,5.000 C-0.000,2.238 2.239,-0.000 5.000,-0.000 Z"></path>
-          </svg>
-        </div>
-        <div class="cs-partical__shape cs-shape__position5">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px">
-            <path fill-rule="evenodd" fill="rgb(108, 136, 207)" d="M10.000,-0.000 C15.523,-0.000 20.000,4.477 20.000,10.000 C20.000,15.523 15.523,20.000 10.000,20.000 C4.477,20.000 -0.000,15.523 -0.000,10.000 C-0.000,4.477 4.477,-0.000 10.000,-0.000 Z"></path>
-          </svg>
-        </div>
-        <div class="cs-partical__shape cs-shape__position6">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px">
-            <path fill-rule="evenodd" fill="rgb(221, 232, 252)" d="M7.500,-0.000 C11.642,-0.000 15.000,3.357 15.000,7.500 C15.000,11.642 11.642,15.000 7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.357 3.358,-0.000 7.500,-0.000 Z"></path>
-          </svg>
-        </div>
-        <div class="cs-partical__shape cs-shape__position7">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" width="20">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="60" d="M368 368L144 144M368 144L144 368"></path>
-          </svg>
-        </div>
-        <div class="cs-partical__shape cs-shape__position8">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="243px" height="243px">
-            <path fill-rule="evenodd" fill="rgb(221, 232, 252)" d="M121.500,0.000 C188.603,0.000 243.000,54.397 243.000,121.500 C243.000,188.602 188.603,243.000 121.500,243.000 C54.397,243.000 -0.000,188.602 -0.000,121.500 C-0.000,54.397 54.397,0.000 121.500,0.000 Z"></path>
-          </svg>
-        </div>
-      </div>
-    </div>
-    <div class="cs-parallax cs-style9 overflow-hidden">
-      <div>
-        <div class="container">
-          <div class="cs-section__heading cs-style1 text-center">
-            <br>
-            <br>
-            <h2 class="cs-section__title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Mua Lẻ Tool</h2>
-            <div class="cs-height__25 cs-height__lg__15"></div>
-          </div>
-          <div class="cs-height__70 cs-height__lg__50"></div>
-          <div class="cs-slider cs-style1 cs-gap-30">
-            <div class="cs-slider__container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-lg-slides="4" data-add-slides="4">
-              <div class="cs-slider__wrapper">
-                <div class="cs-slide">
-                  <a href="https://app.toolsclub.net/" class="cs-icon__box cs-style2 text-center">
-                    <div class="cs-icon__box__icon cs-center"></div>
-                    <div class="cs-height__35 cs-height__lg__35"></div>
-                    <center>
-                      <img src="cdn/tools/semrush.png">
-                    </center>
-                    <h2 class="cs-icon__box__title">Semrush Guru</h2>
-                    <span class="cs-btn cs-style1 cs-color2 cs-primary__font">
-                      <span class="cs-btn__text">49,000 VNĐ</span>
-                    </span>
-                  </a>
-                </div>
-                <div class="cs-slide">
-                  <a href="https://app.toolsclub.net/" class="cs-icon__box cs-style2 text-center">
-                    <div class="cs-icon__box__icon cs-center"></div>
-                    <div class="cs-height__35 cs-height__lg__35"></div>
-                    <center>
-                      <img src="cdn/tools/ahrefs.png">
-                    </center>
-                    <h2 class="cs-icon__box__title">Ahref</h2>
-                    <span class="cs-btn cs-style1 cs-color2 cs-primary__font">
-                      <span class="cs-btn__text">89,000 VNĐ</span>
-                    </span>
-                  </a>
-                </div>
-                <div class="cs-slide">
-                  <a href="https://app.toolsclub.net/" class="cs-icon__box cs-style2 text-center">
-                    <div class="cs-icon__box__icon cs-center"></div>
-                    <div class="cs-height__35 cs-height__lg__35"></div>
-                    <center>
-                      <img src="cdn/tools/semrushsoly.png">
-                    </center>
-                    <h2 class="cs-icon__box__title">Semrush Guru</h2>
-                    <span class="cs-btn cs-style1 cs-color2 cs-primary__font">
-                      <span class="cs-btn__text">52,000 VNĐ</span>
-                    </span>
-                  </a>
-                </div>
-                <div class="cs-slide">
-                  <a href="https://app.toolsclub.net/" class="cs-icon__box cs-style2 text-center">
-                    <div class="cs-icon__box__icon cs-center"></div>
-                    <div class="cs-height__35 cs-height__lg__35"></div>
-                    <center>
-                      <img src="cdn/tools/keywordtool.png">
-                    </center>
-                    <h2 class="cs-icon__box__title">Keyword Tool</h2>
-                    <span class="cs-btn cs-style1 cs-color2 cs-primary__font">
-                      <span class="cs-btn__text">37,000 VNĐ</span>
-                    </span>
-                  </a>
-                </div>
-                <div class="cs-slide">
-                  <a href="https://app.toolsclub.net/" class="cs-icon__box cs-style2 text-center">
-                    <div class="cs-icon__box__icon cs-center"></div>
-                    <div class="cs-height__35 cs-height__lg__35"></div>
-                    <center>
-                      <img src="cdn/tools/netflix.png">
-                    </center>
-                    <h2 class="cs-icon__box__title">Netflix</h2>
-                    <span class="cs-btn cs-style1 cs-color2 cs-primary__font">
-                      <span class="cs-btn__text">38,000</span>
-                    </span>
-                  </a>
-                </div>
-                <div class="cs-slide">
-                  <a href="https://app.toolsclub.net/" class="cs-icon__box cs-style2 text-center">
-                    <div class="cs-icon__box__icon cs-center"></div>
-                    <div class="cs-height__35 cs-height__lg__35"></div>
-                    <center>
-                      <img src="cdn/tools/chatgptplus.png">
-                    </center>
-                    <h2 class="cs-icon__box__title">ChatGPT 4.0</h2>
-                    <span class="cs-btn cs-style1 cs-color2 cs-primary__font">
-                      <span class="cs-btn__text">54,000</span>
-                    </span>
-                  </a>
-                </div>
-                <div class="cs-slide">
-                  <a href="https://app.toolsclub.net/" class="cs-icon__box cs-style2 text-center">
-                    <div class="cs-icon__box__icon cs-center"></div>
-                    <div class="cs-height__35 cs-height__lg__35"></div>
-                    <center>
-                      <img src="cdn/tools/other.png">
-                    </center>
-                    <h2 class="cs-icon__box__title">100+ More Tools</h2>
-                    <span style="background-color: #ff400080" class="cs-btn cs-style1 cs-color2 cs-primary__font">
-                      <span class="cs-btn__text">Xem ngay</span>
-                    </span>
-                  </a>
-                </div>
-            </div>
-            <div class="cs-pagination cs-style1 cs-hidden cs-center"></div>
-            <div class="cs-slider__arrows cs-style1 cs-center">
-              <div class="cs-left__arrow cs-center">
-                <i class="fas fa-chevron-left"></i>
-              </div>
-              <div class="cs-right__arrow cs-center">
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-height__130 cs-height__lg__70"></div>
-      </div>
-      <div class="container" style="padding-bottom: 20px;">
-        <div class="row">
-          <div class="col-sm-6 col-lg-6 col-sm-6">
-            <img src="assets/img/agency/faq.svg" style="width: 500px; text-align: center; margin-top: 50px;">
-          </div>
-          <div class="col-sm-6 col-lg-6 col-sm-6 askme">
-            <h2 class="cs-section__title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-              <b>Câu hỏi thường gặp</b>
-            </h2>
-            <br>
-            <button class="accordion"> Một tài khoản dùng được cho mấy người?</button>
-            <div class="panel">
-              <p>Một tài khoản ToolsClub có thể được truy cập tại 2 wifi khác nhau cùng lúc, và không giới hạn số lượng máy. Vậy nên nếu nhiều máy cùng wifi thì đều có thể sử dụng đồng thời.</p>
-            </div>
-            <button class="accordion">Có thể dùng 1 tài khoản cả ở Công ty & Tại nhà không?</button>
-            <div class="panel">
-              <p>Được, khi một wifi thoát ra không sử dụng nữa, thì một wifi khác có thể vào dùng.</p>
-            </div>
-            <button class="accordion">Làm sao để truy cập sử dụng tools?</button>
-            <div class="panel">
-              <p>Bạn có thể truy cập trực tiếp các tools tại ToolsClub ngay trên website. Không cần phải tải bất kì phần mềm gì.</p>
-            </div>
-            <button class="accordion">Các phần mềm có giới hạn gì không</button>
-            <div class="panel">
-              <p>Hầu hết các tools đều full tính năng, không giới hạn lượt dùng. Sẽ có nhiều khu vực để bạn thay đổi nếu có sự cố.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="cs-footer cs-style1 cs-color2">
-        <div class="cs-height__110 cs-height__lg__70"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <div class="cs-footer__item">
-                <div class="cs-main__header__left">
-                  <a class="cs-site__branding" href="index.html">
-                    <img src="./cdn/toolsclub.png" alt="">
-                  </a>
-                </div>
-                <br>
-                <div class="cs-footer__widget__text">ToolsClub.Net là nơi bán tools mua chung chất lượng với giá cả phải chăng.</div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="cs-footer__item widget_nav_menu">
-                <h2 class="cs-widget__title">Điều hướng</h2>
-                <ul class="menu">
-                  <li>
-                    <a href="javascript:void(0)">Về chúng tôi</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Điều khoản & Quy định</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">DMCA</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="cs-footer__item widget_nav_menu">
-                <h2 class="cs-widget__title">Liên hệ</h2>
-                <ul class="menu">
-                  <li>
-                    <a href="https://www.facebook.com/toolsclub.net/" target="_blank">
-                      <i class="fab fa-facebook"></i> Facebook </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- <div class="col-lg-3 col-sm-6"><div class="cs-footer__item cs-address__widgert"><h2 class="cs-widget__title">Join Us</h2><a href="aff/signup.html"><button class="join">20% Comission <br> Join Affiliate</button><br></a><br><a href="https://telegram.me/toolsclub"><button class="telegram">Join Our<br> Telegram Group</button></a></div></div> -->
-          </div>
-        </div>
-        <div class="cs-copyright text-center">
-          <div class="container">Made with 💗 by Humans on 🌎</div>
-        </div>
-        <div class="cs-parallax__shape cs-position1">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="13px">
-            <path fill-rule="evenodd" fill="rgb(97, 192, 49)" d="M6.500,-0.000 C10.090,-0.000 13.000,2.910 13.000,6.500 C13.000,10.090 10.090,13.000 6.500,13.000 C2.910,13.000 -0.000,10.090 -0.000,6.500 C-0.000,2.910 2.910,-0.000 6.500,-0.000 Z"></path>
-          </svg>
-        </div>
-        <div class="cs-parallax__shape cs-position4">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="10px">
-            <path fill-rule="evenodd" fill="rgb(62, 80, 110)" d="M5.000,-0.000 C7.761,-0.000 10.000,2.238 10.000,5.000 C10.000,7.761 7.761,10.000 5.000,10.000 C2.238,10.000 -0.000,7.761 -0.000,5.000 C-0.000,2.238 2.238,-0.000 5.000,-0.000 Z"></path>
-          </svg>
-        </div>
-        <div class="cs-parallax__shape cs-position5">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px">
-            <path fill-rule="evenodd" fill="rgb(112, 87, 248)" d="M7.500,-0.000 C11.642,-0.000 15.000,3.358 15.000,7.500 C15.000,11.642 11.642,15.000 7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.358 3.358,-0.000 7.500,-0.000 Z"></path>
-          </svg>
-        </div>
-      </footer>
-      <!-- Messenger Chat Plugin Code -->
-      <div id="fb-root"></div>
-      <!-- Your Chat Plugin code -->
-      <div id="fb-customer-chat" class="fb-customerchat"></div>
-      <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "125494207322140");
-        chatbox.setAttribute("attribution", "biz_inbox");
-      </script>
-      <!-- Your SDK code -->
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml: true,
-            version: 'v18.0'
-          });
-        };
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s);
-          js.id = id;
-          js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      </script>
-      
-      <script src="cdn/script/ggtranslateauto.js"></script>
-      
-      <!-- <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
-      <script src="assets/js/jquery-1.12.4.min.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/isotope.pkg.min.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/wow.min.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/jquery.slick.min.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/lightgallery.min.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/jquery.counter.min.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/select2.min.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/ripples.min.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/jquery-ui.min.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/animated-headline.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script src="assets/js/main.js" type="31695fcf160b31f8cd9edce9-text/javascript"></script>
-      <script type="31695fcf160b31f8cd9edce9-text/javascript">
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-          });
-        }
-      </script>
-      <script src="assets/js/rocket-loader.min.js" data-cf-settings="31695fcf160b31f8cd9edce9-|49" defer=""></script>
-    </div>
-  </body>
+
+<body>
+
+<main class="page-wrapper">
+
+<header class="navbar navbar-expand-lg fixed-top">
+<div class="container"><a class="navbar-brand pe-sm-3" href="#top" data-scroll=""><img style="width: 190px;" src="./cdn/toolsclub.png"></a>
+<div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+<input class="form-check-input" type="checkbox" id="theme-mode">
+<label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
+<label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
+</div>
+<a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="https://app.toolsclub.net/"><i class="ai-login fs-xl me-2 ms-n1"></i>Đăng nhập</a>
+<button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+<nav class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+<li class="nav-item"><a class="nav-link" href="#top" data-scroll="">Khuyến mãi<span class="badge bg-primary ms-2">Giảm 20%</span></a></li>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Thông tin</a>
+<ul class="dropdown-menu">
+<!-- <li><a class="dropdown-item" href="agreement/refund.html">Refund Policy</a></li> -->
+<li><a class="dropdown-item" href="#" id="policy-link">Chính sách sử dụng</a></li>
+<li><a class="dropdown-item" href="#" id="about-us">Về chúng tôi</a></li>
+</ul>
+</li>
+</ul>
+<div class="d-sm-none p-3 mt-n3">
+<a class="btn btn-primary w-100  mb-1" href="https://app.toolsclub.net/"><i class="ai-login fs-xl me-2 ms-n1"></i>Đăng nhập</a>
+</div>
+</nav>
+</div>
+</header> 
+
+<section class="bg-secondary py-5">
+<div class="floating-logo">
+  <img src="assets/img/root/wordai.svg" width="170" alt="Logo">
+</div>
+<div class="floating-logo">
+  <img src="assets/img/root/semrush.svg" width="170" alt="Logo">
+</div>
+<div class="floating-logo">
+  <img src="assets/img/root/quetext.svg" width="170" alt="Logo">
+</div>
+<div class="floating-logo">
+  <img src="assets/img/root/quillbot.svg" width="170" alt="Logo">
+  </div>
+<div class="floating-logo">
+  <img src="assets/img/root/ubersuggest.svg" width="170" alt="Logo">
+  </div>
+<div class="floating-logo">
+  <img src="assets/img/root/skillshare.svg" width="170" alt="Logo">
+</div>
+<div class="floating-logo">
+  <!-- keywordtool -->
+  <img src="assets/img/root/l3.png" width="170" alt="Logo">
+</div>
+<div class="container text-center pt-5 mt-lg-4 mt-xl-5">
+<p class="badge border border-primary text-primary fs-sm me-2 mb-2" style="max-width: 640px;">Cộng Đồng Mua Chung Tool Hàng Đầu, Đáng Tin Cậy</p>
+<div class="position-relative mx-auto my-3" style="max-width: 850px;">
+<h1 class="display-3 position-relative zindex-4 mb-0">
+<span style="background: linear-gradient(86deg, #121519 3.49%, #000 50.67%, #ff4000 70.79%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Nơi mua chung tool<br>duy nhất mà bạn cần!</span></h1>
+</div>
+<p class="fs-lg pb-3 mb-2 mb-sm-3 mb-lg-4 mx-auto" style="max-width: 700px;">Toolsclub cung cấp hơn 30+ tool sử dụng trực tiếp tại website — không cần tải gì cả! Chỉ cần đăng ký một tài khoản. Đơn giản & dễ dàng.
+</p><a class="free-sample-button btn btn-lg btn-primary" href="/freetrial">Trải nghiệm 30 ngày miễn phí</a>
+<p class="fs-xs mb-1">Không thanh toán, 100% miễn phí!</p>
+</div>
+<div class="container-fluid overflow-hidden px-4 pt-3 pt-sm-4 pb-sm-2 pb-md-3 py-lg-4 py-xl-5 mt-4">
+<div class="parallax mx-auto" style="max-width: 1440px;">
+<div class="parallax-layer" data-depth="0.1">
+<img class="d-dark-mode-none" src="assets/img/root/land1.png" alt="Layer">
+<img class="d-none d-dark-mode-block" src="assets/img/root/land1.png" alt="Layer"></div>
+<div class="parallax-layer zindex-2" data-depth="0.25">
+<img class="d-dark-mode-none" src="assets/img/root/land2.png" alt="Layer">
+<img class="d-none d-dark-mode-block" src="assets/img/root/land2.png" alt="Layer"></div>
+<div class="parallax-layer zindex-1" data-depth="0.35">
+<img class="d-dark-mode-none" src="assets/img/root/v3.png" alt="Layer">
+<img class="d-none d-dark-mode-block" src="assets/img/root/v3.png" alt="Layer"></div>
+<div class="parallax-layer zindex-1" data-depth="0.45">
+<img class="d-dark-mode-none" src="assets/img/root/land4.png" alt="Layer">
+<img class="d-none d-dark-mode-block" src="assets/img/root/land4.png" alt="Layer"></div>
+</div>
+</div>
+</section>
+<div class="d-flex w-100 justify-content-center overflow-hidden" style="color: var(--ar-gray-100);">
+<svg class="flex-shrink-0" width="3000" height="18" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="currentColor" points="3000,0 3000,12.3 2751,7.2 2460,18 2239,7.2 2017,10.7 1911.5,7.2 1368,18 831,7.2 540,18 319,7.2 97,10.7 0,7.5 0,0 "></polygon>
+</svg>
+</div>
+
+<div class="TC_custom_logos">
+  <div class="TC_custom_logos-slide">
+    <img src="./cdn/brandlogos/seongon.png" />
+    <img src="./cdn/brandlogos/seodo.png" />
+    <img src="./cdn/brandlogos/3dc.png" />
+    <img src="./cdn/brandlogos/haravan.png" />
+    <img src="./cdn/brandlogos/ladipage.png" />
+    <img src="./cdn/brandlogos/gtvseo.png" />
+    <img src="./cdn/brandlogos/vietnix.png" />
+    <img src="./cdn/brandlogos/hostinger.png" />
+    <img src="./cdn/brandlogos/azdigi.png" />
+    <img src="./cdn/brandlogos/monamedia.png" />
+  </div>
+</div>
+
+<section class="container my-sm-2 my-md-4 my-lg-5">
+<h2 class="h1 text-center pt-sm-3 mt-xxl-3 mx-auto" style="max-width: 1000px;">Được sử dụng bởi hơn<br>1,000+ người làm marketing!</h2>
+<p class="fs-lg text-center pb-3 mb-lg-4 mx-auto" style="max-width: 900px;">Khám phá các tính năng & sản phẩm tại toolsclub.net. Nơi Mua Chung Tool Hàng Đầu, Đáng Tin Cậy!</p>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-3 gy-sm-4 gy-xl-5 gx-4 gx-md-5 pb-xxl-4 mb-sm-2 mb-lg-0 mb-xl-2">
+<div class="col">
+<div class="text-center px-xxl-4">
+<svg class="d-inline-block mb-3 mb-md-4" width="76" height="75" viewBox="0 0 76 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer shape (four rectangles forming a square) -->
+  <rect x="6" y="6" width="8" height="63" rx="5" fill="black" />
+  <rect x="6" y="5" width="64" height="11" rx="5" fill="black" />
+  <rect x="62" y="6" width="8" height="63" rx="5" fill="black" />
+  <rect x="6" y="61" width="64" height="9" rx="5" fill="black" />
+
+  <!-- Address bar -->
+  <rect x="14" y="9" width="48" height="4" rx="2" fill="#5B5F63" />
+
+  <!-- Example content inside the browser window -->
+  <circle cx="25" cy="30" r="4" fill="#FF4000" />
+  <rect x="20" y="39" width="36" height="2" fill="#A9A9A9" />
+  <rect x="20" y="43" width="36" height="2" fill="#A9A9A9" />
+  <rect x="20" y="47" width="36" height="2" fill="#A9A9A9" />
+  <rect x="20" y="51" width="36" height="2" fill="#A9A9A9" />
+</svg>
+
+
+<h3 class="h4 mb-2">Dùng Ngay Tại Web</h3>
+<p>Truy cập phần mềm trực tiếp tại các trình duyệt như Chrome, Microsoft Edge, Firefox, không tải thêm bất kì thứ gì.</p>
+</div>
+</div>
+<div class="col">
+<div class="text-center px-xxl-4">
+<svg class="d-inline-block mb-3 mb-md-4" width="76" height="75" viewbox="0 0 76 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="text-primary" d="M32.2274 17.3606C32.3865 17.6845 32.4916 18.0315 32.5387 18.3881L33.4088 31.3253L33.8407 37.8279C33.8452 38.4966 33.9501 39.161 34.1521 39.7997C34.6737 41.0388 35.9286 41.8263 37.2939 41.7714L58.0979 40.4106C58.9988 40.3958 59.8688 40.7327 60.5164 41.3473C61.0561 41.8594 61.4045 42.5294 61.5143 43.25L61.5511 43.6876C60.6902 55.6086 51.9349 65.5516 40.0386 68.1183C28.1424 70.685 15.9433 65.263 10.0647 54.7961C8.36996 51.7552 7.31141 48.4128 6.95119 44.9651C6.80071 43.9445 6.73445 42.9136 6.75306 41.8825C6.73448 29.1018 15.8358 18.0525 28.576 15.3888C30.1094 15.1501 31.6126 15.9618 32.2274 17.3606Z" fill="currentColor"></path>
+<path class="text-warning" d="M40.7178 6.25268C54.9674 6.6152 66.9438 16.862 69.249 30.6635L69.227 30.7654L69.1641 30.9135L69.1729 31.32C69.1402 31.8586 68.9323 32.3768 68.5739 32.7954C68.2006 33.2314 67.6906 33.5283 67.129 33.6436L66.7865 33.6906L42.7841 35.2458C41.9857 35.3245 41.1907 35.0671 40.597 34.5375C40.1022 34.0962 39.7859 33.5004 39.6965 32.8585L38.0855 8.89094C38.0574 8.8099 38.0574 8.72204 38.0855 8.641C38.1075 7.98035 38.3983 7.35587 38.8929 6.90709C39.3876 6.45831 40.0448 6.22262 40.7178 6.25268Z" fill="currentColor"></path>
+</svg>
+<h3 class="h4 mb-2">Thanh Toán Tự Động</h3>
+<p>Tự động 100% và chấp nhận đa dạng phương thức như quét QR, chuyển khoản, ví điện tử, thẻ quốc tế visa, mastercard.</p>
+</div>
+</div>
+<div class="col">
+<div class="text-center px-xxl-4">
+<svg class="d-inline-block mb-3 mb-md-4" width="76" height="75" viewbox="0 0 76 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="text-warning" d="M38.2703 68.75C37.8833 68.75 37.4964 68.6611 37.1471 68.4803L25.8937 62.655C22.7005 61.0003 20.2025 59.1433 18.252 56.9799C13.9828 52.2485 11.6075 46.175 11.5698 39.8747L11.4376 19.1383C11.4219 16.7451 12.9666 14.597 15.2758 13.788L35.9391 6.58371C37.166 6.14551 38.5346 6.13938 39.7835 6.56226L60.5255 13.5214C62.8472 14.2967 64.4171 16.4294 64.4297 18.8196L64.5618 39.5713C64.6027 45.8624 62.3093 51.9605 58.1061 56.7439C56.1776 58.938 53.7017 60.8226 50.5399 62.5079L39.3871 68.465C39.0411 68.6519 38.6573 68.7469 38.2703 68.75Z" fill="currentColor"></path>
+<path class="text-primary" d="M35.8712 44.753C35.2672 44.756 34.6632 44.5385 34.1975 44.0911L28.2075 38.3301C27.2825 37.4353 27.2731 35.9828 28.1886 35.0819C29.1041 34.1779 30.5985 34.1687 31.5265 35.0605L35.8366 39.2035L46.3602 28.8276C47.2788 27.9236 48.7732 27.9144 49.6981 28.8061C50.6262 29.7009 50.6357 31.1565 49.7202 32.0543L37.5355 44.0696C37.0762 44.5231 36.4753 44.7499 35.8712 44.753Z" fill="currentColor"></path>
+</svg>
+<h3 class="h4 mb-2">Giá Cả Phải Chăng</h3>
+<p>Toolsclub là một trong rất ít nơi mua chung tool có giá tốt nhất thị trường, giúp các doanh nghiệp, agency hay cá nhân tiết kiệm chi phí.</p>
+</div>
+</div>
+<div class="col">
+<div class="text-center px-xxl-4">
+<svg class="d-inline-block mb-3 mb-md-4" width="76" height="75" viewBox="0 0 76 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="text-warning" d="M38.0625 6.25C19.9063 6.25 6.75 21.0625 6.75 37.5C6.75 42.75 8.28125 48.1562 10.9688 53.0938C11.4688 53.9062 11.5312 54.9375 11.1875 55.9062L9.09375 62.9062C8.625 64.5937 10.0625 65.8438 11.6562 65.3438L17.9688 63.4688C19.6875 62.9062 21.0312 63.625 22.6281 64.5938C27.1906 67.2812 32.875 68.6562 38 68.6562C53.5 68.6562 69.25 56.6875 69.25 37.4062C69.25 20.7812 55.8125 6.25 38.0625 6.25Z" fill="currentColor"></path>
+<path class="text-primary" fill-rule="evenodd" clip-rule="evenodd" d="M37.9411 41.5306C35.7224 41.4993 33.9411 39.7181 33.9411 37.4993C33.9411 35.3118 35.7536 33.4993 37.9411 33.5305C40.1599 33.5305 41.9411 35.3118 41.9411 37.5306C41.9411 39.7181 40.1599 41.5306 37.9411 41.5306ZM23.5312 41.5303C21.3438 41.5303 19.5312 39.7178 19.5312 37.5303C19.5312 35.3115 21.3125 33.5303 23.5312 33.5303C25.75 33.5303 27.5312 35.3115 27.5312 37.5303C27.5312 39.7178 25.75 41.499 23.5312 41.5303ZM48.3458 37.5303C48.3458 39.7178 50.1271 41.5303 52.3458 41.5303C54.5646 41.5303 56.3458 39.7178 56.3458 37.5303C56.3458 35.3115 54.5646 33.5303 52.3458 33.5303C50.1271 33.5303 48.3458 35.3115 48.3458 37.5303Z" fill="currentColor"></path>
+</svg>
+<h3 class="h4 mb-2">Nhắn Tin Hỗ Trợ</h3>
+<p>Chăm sóc khách hàng trực tiếp tại các kênh chat như facebook, messenger, telegram.</p>
+</div>
+</div>
+<div class="col">
+<div class="text-center px-xxl-4">
+<svg class="d-inline-block mb-3 mb-md-4" width="76" height="75" viewbox="0 0 76 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="text-warning" d="M41.0509 9.73004L48.0087 23.7122C48.5213 24.7252 49.4996 25.4287 50.628 25.585L66.2564 27.8611C67.1691 27.9893 67.9974 28.4708 68.5569 29.2056C69.1101 29.9309 69.3476 30.8502 69.2132 31.7537C69.1038 32.5041 68.7506 33.1982 68.2099 33.7297L56.8856 44.7072C56.0573 45.4732 55.6822 46.6082 55.8823 47.7181L58.6704 63.151C58.9673 65.0144 57.7327 66.7716 55.8823 67.1249C55.1196 67.2468 54.3382 67.1186 53.6505 66.7684L39.71 59.5054C38.6754 58.9832 37.4533 58.9832 36.4187 59.5054L22.4782 66.7684C20.7653 67.6783 18.643 67.0592 17.6897 65.3708C17.3365 64.6986 17.2115 63.9326 17.3271 63.1854L20.1152 47.7494C20.3152 46.6426 19.937 45.5014 19.1119 44.7353L7.78755 33.7641C6.44039 32.4635 6.39975 30.3218 7.69691 28.9742C7.72504 28.9461 7.7563 28.9148 7.78755 28.8835C8.32517 28.3364 9.03157 27.9893 9.79423 27.8987L25.4226 25.6194C26.5478 25.4599 27.5262 24.7627 28.0419 23.7434L34.7496 9.73004C35.3466 8.52943 36.5844 7.78218 37.9284 7.81344H38.3472C39.5131 7.95414 40.529 8.67638 41.0509 9.73004Z" fill="currentColor"></path>
+<path class="text-primary" d="M37.975 59.116C37.3697 59.1348 36.78 59.2974 36.2496 59.5883L22.3772 66.8348C20.6799 67.6449 18.6486 67.0162 17.697 65.393C17.3444 64.73 17.2165 63.97 17.335 63.2256L20.1058 47.8224C20.293 46.7027 19.9185 45.5643 19.1042 44.7761L7.7748 33.8077C6.43001 32.491 6.40504 30.3299 7.72176 28.9819C7.74048 28.9631 7.75608 28.9475 7.7748 28.9319C8.31147 28.4002 9.00415 28.0499 9.74988 27.9404L25.3913 25.6385C26.524 25.4947 27.5068 24.7878 28.0061 23.762L34.8049 9.57224C35.4508 8.42756 36.6895 7.74575 38 7.81768C37.975 8.74657 37.975 58.4842 37.975 59.116Z" fill="currentColor"></path>
+</svg>
+<h3 class="h4 mb-2">Cộng Đồng Lớn</h3>
+<p>Toolsclub có cộng đồng người trên facebook, telegram với hơn 1000+ thành viên, tạo nên một nơi trao đổi, hỏi đáp, học hỏi lẫn nhau.</p>
+</div>
+</div>
+<div class="col">
+<div class="text-center px-xxl-4">
+<svg class="d-inline-block mb-3 mb-md-4" width="76" height="75" viewbox="0 0 76 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="text-warning" d="M59.2775 28.1906C57.8666 28.1906 55.9976 28.1594 53.6708 28.1594C47.9959 28.1594 43.3298 23.4625 43.3298 17.7344V7.68437C43.3298 6.89375 42.6986 6.25 41.9158 6.25H25.3863C17.6724 6.25 11.4375 12.5812 11.4375 20.3406V54.0125C11.4375 62.1531 17.9694 68.75 26.0299 68.75H50.6446C58.3307 68.75 64.5625 62.4594 64.5625 54.6937V29.5969C64.5625 28.8031 63.9344 28.1625 63.1484 28.1656C61.8272 28.175 60.2429 28.1906 59.2775 28.1906Z" fill="currentColor"></path>
+<path class="text-primary" d="M50.7639 8.02291C49.8295 7.05103 48.1982 7.71978 48.1982 9.06666V17.3073C48.1982 20.7635 51.0451 23.6073 54.5014 23.6073C56.6795 23.6323 59.7045 23.6385 62.2732 23.6323C63.5889 23.6292 64.2576 22.0573 63.3451 21.1073C60.0482 17.6792 54.1451 11.5354 50.7639 8.02291Z" fill="currentColor"></path>
+<path class="text-primary" fill-rule="evenodd" clip-rule="evenodd" d="M28.5447 35.5859H39.1229C40.4072 35.5859 41.451 34.5452 41.451 33.2609C41.451 31.9765 40.4072 30.9327 39.1229 30.9327H28.5447C27.2604 30.9327 26.2197 31.9765 26.2197 33.2609C26.2197 34.5452 27.2604 35.5859 28.5447 35.5859ZM28.5448 51.1926H45.5573C46.8417 51.1926 47.8854 50.152 47.8854 48.8676C47.8854 47.5833 46.8417 46.5395 45.5573 46.5395H28.5448C27.2605 46.5395 26.2198 47.5833 26.2198 48.8676C26.2198 50.152 27.2605 51.1926 28.5448 51.1926Z" fill="currentColor"></path>
+</svg>
+<h3 class="h4 mb-2">Chất Lượng Tối Ưu</h3>
+<p>Giao diện sử dụng thân thiện, dễ dàng dùng ngay lập tức với tốc độ cao giúp công việc không gián đoạn.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="container">
+<div class="bg-faded-primary rounded-5 py-5 px-4 p-sm-5">
+<div class="d-lg-flex align-items-center g-0 py-2 py-sm-3 py-md-4 p-xl-5">
+<div class="order-lg-2 text-center text-lg-start ps-lg-5 mx-auto me-lg-0">
+<h2 class="h1 mb-4">Công cụ Hàng Đầu <br class="d-none d-lg-inline">cho các <span style="background: linear-gradient(184deg, #fff 3.49%, #ff944d 50.67%, #ff4000 100.79%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Chuyên Gia</span>.</h2>
+<p class="pb-3 mb-3 mb-lg-4">Toolsclub cung cấp hơn 30+ phần mềm, bạn có thể mua theo gói hoặc mua đơn lẻ từng cái.</p><a class="btn btn-primary d-none d-lg-inline-flex" href="https://app.toolsclub.net/page/signup">Xem giá</a>
+</div>
+<div class="order-lg-1 w-100 mx-auto mx-lg-0" style="max-width: 558px;">
+<div class="row row-cols-3 g-3 g-sm-4 g-lg-3 g-xl-4">
+<div class="col">
+<div class="bg-light rounded-3 aos-init aos-animate" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="300"><img src="assets/img/root/l1.png" alt="Ahrefs"></div>
+</div>
+<div class="col">
+<div class="bg-light rounded-3 aos-init aos-animate" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="500"><img src="assets/img/root/l2.png" alt="Semrush"></div>
+</div>
+<div class="col">
+<div class="bg-light rounded-3 aos-init aos-animate" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="200"><img class="d-dark-mode-none" src="assets/img/root/l3.png" alt="Wordai"><img class="d-none d-dark-mode-block" src="assets/img/root/l3.png" alt="Wordai"></div>
+</div>
+<div class="col">
+<div class="bg-light rounded-3 aos-init" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="800"><img src="assets/img/root/l4.png" alt="Google"></div>
+</div>
+<div class="col">
+<div class="bg-light rounded-3 aos-init" data-aos="zoom-in" data-aos-easing="ease-out-back"><img class="d-dark-mode-none" src="assets/img/root/l5.png" alt="Google Ads"><img class="d-none d-dark-mode-block" src="assets/img/root/l5.png" alt="Google Ads"></div>
+</div>
+<div class="col">
+<div class="bg-light rounded-3 aos-init" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="600"><img class="d-dark-mode-none" src="assets/img/root/l6.png" alt="Admitad"><img class="d-none d-dark-mode-block" src="assets/img/root/l6.png" alt="Admitad"></div>
+</div>
+<div class="col">
+<div class="bg-light rounded-3 aos-init" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="400"><img class="d-dark-mode-none" src="assets/img/root/l7.png" alt="Google Analytics"><img class="d-none d-dark-mode-block" src="assets/img/root/l7.png" alt="Google Analytics"></div>
+</div>
+<div class="col">
+<div class="bg-light rounded-3 aos-init" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="700"><img class="d-dark-mode-none" src="assets/img/root/l8.png" alt="Instagram"><img class="d-none d-dark-mode-block" src="assets/img/root/l8.png" alt="Instagram"></div>
+</div>
+<div class="col">
+<div class="bg-light rounded-3 aos-init" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="100"><img class="d-dark-mode-none" src="assets/img/root/l9.png" alt="TikTok"><img class="d-none d-dark-mode-block" src="assets/img/root/l9.png" alt="TikTok"></div>
+</div>
+</div>
+<div class="d-lg-none text-center pt-4 mt-2 mt-md-3 aos-init aos-animate" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="900"><a class="btn btn-primary" href="signup/free.html">Xem giá</a></div>
+</div>
+</div>
+</div>
+</section>
+<section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
+<div class="row pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-xxl-2 mt-md-3 mt-lg-0">
+<div class="col-lg-5 mb-5 mb-lg-0">
+<div class="h1 text-center text-lg-start pb-md-2 pb-xl-0 mb-4 mb-xl-5">Phục vụ các seoer, marketers, designer <span style="background: linear-gradient(184deg, #fff 3.49%, #ff944d 50.67%, #ff4000 100.79%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"><br>Kể từ 2023</span>. <br> Đây là một bước ngoặt!</div>
+<p class="pb-3 mb-3 mb-lg-4">Toolsclub là một nơi mua chung tool mới trên thị trường, bắt đầu từ cuối 2023. Tuy nhiên đã có lượng lớn người dùng nhờ dịch vụ vượt trội so với thị trường.</p>
+</div>
+<div class="col-lg-7 col-xl-6 offset-xl-1">
+<div class="row row-cols-1 row-cols-sm-2 g-3 g-md-4">
+<div class="col">
+<div class="d-flex flex-column h-100 bg-faded-primary rounded-3 text-center p-4">
+<div class="h3 display-5 mt-1 mb-0">100+</div>
+<div class="fs-lg mb-1">Truy Cập Hàng Ngày</div>
+</div>
+</div>
+<div class="col">
+<div class="d-flex flex-column h-100 bg-faded-info rounded-3 text-center p-4">
+<div class="h3 display-5 mt-1 mb-0">50+</div>
+<div class="fs-lg mb-1">Đăng Ký Mới Hàng Tuần</div>
+</div>
+</div>
+<div class="col">
+<div class="d-flex flex-column h-100 bg-faded-warning rounded-3 text-center p-4">
+<div class="h3 display-5 mt-1 mb-0">30+</div>
+<div class="fs-lg mb-1">Phần Mềm Cung Cấp</div>
+</div>
+</div>
+<div class="col">
+<div class="d-flex flex-column h-100 bg-faded-danger rounded-3 text-center p-4">
+<div class="h3 display-5 mt-1 mb-0">700+</div>
+<div class="fs-lg mb-1">Thành Viên Cộng Đồng</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="container pb-0 mb-xl-0 mb-xxl-0" data-aos="" data-aos-duration="600" data-aos-offset="280" data-disable-parallax-down="lg">
+<div class="row align-items-center pb-3 pb-md-4 pb-lg-5">
+<div class="col-md-6 col-lg-7 pb-3 pb-sm-4 pb-md-0"><a target="_blank" href="https://www.youtube.com/@toolsclubnet"><img class="d-dark-mode-none" src="assets/img/root/banner.png" width="636" alt="Mobile screens"><img class="d-none d-dark-mode-block" src="assets/img/root/banner.png" width="636" alt="Mobile screens"></a></div>
+<div class="col-md-6 col-lg-5" data-aos="" data-aos-duration="850" data-aos-offset="150" data-disable-parallax-down="lg">
+<h2 class="h1 text-center text-md-start pb-4 pb-lg-5 mb-1 mb-md-2 mb-lg-0 mb-xxl-2">Truy cập sử dụng<br class="d-none d-md-inline"> trên mọi thiết bị!</h2>
+<div class="d-flex justify-content-between mx-auto mx-md-0" style="max-width: 450px;">
+
+<div class="pe-3">
+<p class="text-muted mb-2">Laptop</p>
+<div class="d-flex mb-3"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i></div>
+<a class="btn btn-dark btn-lg px-3 py-2"><img class="d-dark-mode-none mx-1" src="assets/img/root/ios-light.png" width="101" alt="App Store"><img class="d-none d-dark-mode-block mx-1" src="assets/img/root/ios-dark.png" width="101" alt="Mac iOS"></a>
+</div>
+
+<div class="border-end"></div>
+
+<div class="ps-3">
+<p class="text-muted mb-2">Smartphone</p>
+<div class="d-flex mb-3"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning"></i></div>
+<a class="btn btn-dark btn-lg px-3 py-2"><img class="d-dark-mode-none mx-1" src="assets/img/root/win-white.png" width="101" alt="Google Play"><img class="d-none d-dark-mode-block mx-1" src="assets/img/root/win-dark.png" width="101" alt="Microsft Windows"></a>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="bg-secondary py-5"  id="faq">
+<div class="container py-md-2 py-lg-3 py-xl-5 my-2 my-sm-3 my-md-4 my-xxl-5">
+<div class="row">
+<div class="col-md-4 text-center text-md-start">
+<h2 class="h1">Có thắc mắc?<br>Hãy xem qua FAQ</h2>
+<p class="pb-3 pb-sm-4">Không cần phải chờ đợi, hãy xem qua các câu hỏi thường gặp tại đây</p>
+<div class="d-none d-md-flex justify-content-center">
+<svg class="text-warning ms-n4" width="200" height="211" viewbox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
+</svg>
+</div>
+</div>
+<div class="col-md-8 col-lg-7 offset-lg-1">
+<div class="accordion">
+<div class="accordion-item bg-light">
+<h3 class="accordion-header" id="headingOne">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne" aria-expanded="true" aria-controls="questionOne">Tại sao giá ở Toolsclub lại rẻ vậy?</button>
+</h3>
+<div class="accordion-collapse collapse show" id="questionOne" aria-labelledby="headingOne" data-bs-parent="#faq">
+<div class="accordion-body fs-sm">Đây là dịch vụ mua chung, các tài khoản được dùng ở từng phần mềm được sử dụng chung bởi nhiều người, vì vậy giá sẽ rẻ hơn so với việc tự mua một cái.</div>
+</div>
+</div>
+<div class="accordion-item bg-light">
+<h3 class="accordion-header" id="headingTwo">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">Một tài khoản Toolsclub dùng được bao nhiêu người?</button>
+</h3>
+<div class="accordion-collapse collapse" id="questionTwo" aria-labelledby="headingTwo" data-bs-parent="#faq">
+<div class="accordion-body fs-sm">Một tài khoản Toolsclub có thể được truy cập tại 2 wifi khác nhau cùng lúc, và không giới hạn số lượng máy. Vậy nên nếu nhiều máy cùng wifi thì đều có thể sử dụng đồng thời.</div>
+</div>
+</div>
+<div class="accordion-item bg-light">
+<h3 class="accordion-header" id="headingThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionThree" aria-expanded="false" aria-controls="questionThree">Có thể dùng một tài khoản cả ở công ty &amp; tại nhà không?</button>
+</h3>
+<div class="accordion-collapse collapse" id="questionThree" aria-labelledby="headingThree" data-bs-parent="#faq">
+<div class="accordion-body fs-sm">Được, khi một wifi thoát ra không sử dụng nữa, thì một wifi khác có thể vào dùng, và tối đa cho phép 2 wifi cùng lúc.</div>
+</div>
+</div>
+<div class="accordion-item bg-light">
+<h3 class="accordion-header" id="headingFive">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFive" aria-expanded="false" aria-controls="questionFive">Truy cập sử dụng phần mềm thế nào?</button>
+</h3>
+<div class="accordion-collapse collapse" id="questionFive" aria-labelledby="headingFive" data-bs-parent="#faq">
+<div class="accordion-body fs-sm">Toolsclub cung cấp giao diện quản lý, chỉ cần bấm vào các phần mềm tương ước thì sẽ truy cập ngay lập tức trên website, không cần tải gì cả.</div>
+</div>
+</div>
+<div class="accordion-item bg-light">
+<h3 class="accordion-header" id="headingSix">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionSix" aria-expanded="false" aria-controls="questionSix">Các phần mềm có giới hạn gì không?</button>
+</h3>
+<div class="accordion-collapse collapse" id="questionSix" aria-labelledby="headingSix" data-bs-parent="#faq">
+<div class="accordion-body fs-sm">Các công cụ đều đầy đủ 99.99% tính năng, không giới hạn lượt dùng. Sẽ có nhiều khu vực (tức tài khoản dùng cho phần mềm) để bạn thay đổi nếu có sự cố.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-primary pb-2 py-sm-3 py-md-4 py-lg-5">
+<div class="container py-5 my-lg-2 my-xl-4 my-xxl-5">
+<div class="text-center mx-auto" style="max-width: 700px;" data-disable-parallax-down="lg">
+<h2 class="display-3 text-light mb-lg-4">Sẵn sàng để thử?</h2>
+<p class="h2 text-light mb-4">Không cần trả phí, trải nghiệm <span class="text-warning">miễn phí 30 ngày!</span></p>
+<div class="ignore-dark-mode position-relative pt-2 pt-sm-3 pt-md-5">
+<div data-aos="fade-up" data-disable-parallax-down="lg"><a class="btn btn-lg btn-light text-dark" href="/freetrial">Thử ngay!</a></div>
+<div class="d-none d-md-block position-absolute top-0 end-0 pe-4 me-5 text-warning" data-disable-parallax-down="lg">
+<svg xmlns="http://www.w3.org/2000/svg" width="95" height="78" fill="currentColor" fill-rule="evenodd">
+<path d="M45.912 46.575c.292-.042.598.031.717-.124.396-.515.949-.732 1.432-1.072.593-.418 1.316-.631 1.869-1.068.759-.601 1.564-1.136 2.361-1.63.821-.511 1.549-1.203 2.438-1.595.398-.175.682-.626 1.026-.938.037-.033.13.019.216.036l.121.388c-.497.298-1.076.47-1.438.915-.325.4-.871.331-1.087.699-.26.444-.798.295-.962.706-.194.484-.72.226-.904.629-.221.482-.783.286-1.035.611-.354.456-1.015.374-1.252.807-.321.586-1.099.243-1.26.987-.575.036-.918.551-1.385.809-.528.292-1.13.478-1.558.914-.364.372-.912.375-1.175.748-.244.346-.642.283-.818.57-.237.386-.6.428-.911.619a8.26 8.26 0 0 0-.76.529c-.453.353-.869.799-1.462.879-.137.018-.36.046-.376.148-.1.633-.723.331-.943.747-.251.475-.776.397-1.161.608-.122.067-.334.043-.376.157-.157.427-.601.345-.79.609-.262.363-.655.124-.937.307l-1.287.775-1.166.64-.169-.092-.438.624c-.508-.122-.872-.013-1.125.39-.279.444-.736.226-1.128.21-.45-.018-.454.861-1.113.521-.33-.17-.758.158-1.185.273a2.34 2.34 0 0 1 1.715-1.14c.687-.102 1.047-.943 1.814-.81.235-.503.668-.358 1.099-.257l.288-.804.733.099c.186-.373.415-.671.878-.343l.188-.639c.715-.319 1.539-.442 2.142-1.083.255-.271.572-.473.893-.63l1.8-.908c.621-.392 1.164-1.002 1.94-1.098.126-.015.196-.273.297-.427.123.067.256.195.319.164l1.486-.802c.074-.044.088-.212.13-.322l.351.206.573-.811c.033.022.072.065.101.063.467-.041.707-.594 1.196-.605.06-.001.086-.206.079-.189zm37.775-26.328l-.088-.513.286.132 1.071-1.642c.502-.714 1.045-1.367 1.482-2.172.371-.684.963-1.216 1.191-2.013.216-.753.94-.943 1.004-1.795.62-.364.637-1.324 1.064-1.885.126-.165.166-.396.381-.495s.187-.171.204-.894l.232-.136c.061-.032.185-.039.184-.078-.015-.948.887-1.041.975-1.887.008-.08-.018-.218.016-.238.962-.562 1.136-1.994 1.878-2.791.277-.299.239-.828.491-1.133.108-.131.192-.292.299-.458-.037-.22-.116-.483-.111-.725s.092-.463.168-.801c-.639-.119-1.039.309-1.602.154L93.892.4l-.057-.367c-1.437-.076-1.475-.126-2.636 1.211-.821.946-1.793 1.725-2.31 3.043-.752.568-1.15 1.556-1.72 2.339l-2.203 3.349-2.911 4.06c-.919 1.254-1.922 2.398-2.942 3.528l-1.978 2.329-2.05 2.235c-.505.542-.96 1.18-1.544 1.577-.618.42-.889 1.252-1.495 1.661-.382.258-.621.771-1.118.832-.069.008-.163.017-.191.074-.466.951-1.333 1.317-1.997 1.978-.69.686-1.427 1.306-2.16 1.928-.405.344-.854.609-1.212 1.039-.422.508-1.04.685-1.506 1.143-.575.565-1.219 1.042-1.856 1.496l-1.832 1.386c-1.166.937-2.465 1.646-3.541 2.742-.284.29-.694.324-.998.66-.411.453-1.173.463-1.512.966-.374.555-1.143.291-1.347 1.032-1.023.334-1.764 1.248-2.767 1.632-.298.114-.536.386-.805.579l-.898.627c-.277.18-.714.076-.798.596-.546.097-.921.561-1.398.783-.611.285-1.047.935-1.766.98-.16.666-.944.34-1.133.986-.033.113-.242.111-.369.164-.367.154-.739.252-1.014.643-.236.334-.76.163-1.009.657-.143.285-.616.269-.926.383l-.183.621c-.713-.29-1.035.197-1.299.806-.439-.342-.854-.11-1.037.168-.235.357-.547.412-.849.531-.882.349-1.601 1.058-2.547 1.279-.244.056-.383.467-.566.707-.142-.017-.312-.065-.47-.053-.442.034-.721.452-1.199.485-.396.027-.769.384-1.044.729-.152.19-.284.035-.373.081-.503.258-1.186.11-1.512.797-.082.172-.374.159-.569.231l-4.201 1.555c-.315.118-.66.22-.898.463-.244.25-.592-.144-.807.147-.139.188-.358.283-.571.441-.234.024-.547.002-.819.095l-3.123 1.163c-1.247.598-2.643.689-3.95 1.08-.942.282-2.034.108-3.14.14l-.614.646-.271-.155-.227 1.117 1.759-.041-.102.753-1.008.372-.192.653.968.447-.346.381c.149.771.665 1.076 1.154 1.407l-.061.258 1.093.702c.228-.179.382-.751.914-.495l-.106.449 1.076-.685.11.186-.527.414.877.229-.004-.61.668-.309.043.891.541-.202c1.046-.524 2.285-.415 3.348-.911 1.07-.498 2.224-.797 3.302-1.278.229-.102.554.336.698-.126.044-.143.474-.024.52-.168.166-.518.502.053.746-.066.423-.206.697-.641 1.171-.788l4.207-1.536c.523-.208.979-.586 1.492-.824l1.607-.663c-.908-.005-2.777.723-3.57 1.195l.372-.337-.199-.142 1.757-.636c.863-.231 1.452-1.065 2.361-1.18.164-.457.681-.362.869-.659.3-.473.87-.007 1.172-.505.228-.376.743-.456 1.214-.712l.159-.39-.125-.151-2.727 1.468-.316-.177.146-.493.541.249-.159-.922.286.155.362.086-.091-.449 1.077-.853.449.543.817-.855.445.148.207-1.149.33.215.399-.54-.434-.274-.133.36-.693-.139.057.571-.988-.074c-.23.549-.85.392-1.29.721l-.203.625c-.447-.377-.719.109-1.157.075l-.22-.523.443.216.082-.733.615.426.466-.661c.424.272.624-.046.866-.373.204-.275.504-.436.779-.661l.04-.833.547.718.829-.505c.284-.174.668-.254.828-.548.214-.395.648.177.845-.283.132-.308.519-.407.789-.598l.745.69-.959.227c.01-.03-.037.112-.098.292l.267.222-.061.308c.051.034.128.12.162.103l.814-.423c.303-.122.758-.06.908-.319.229-.392.61-.293.89-.545l.23-.716.7.308c-.753 1.001-1.755 1.437-2.77 2.164.601.017.996-.175 1.352-.382.212-.123.332-.434.613-.507.224-.057.445-.399.611-.315.422.215.318-.321.519-.388.263-.088.538-.158.778-.295.284-.161.527-.408.807-.578.255-.155.496-.306.728-.519.371-.341.928-.396 1.485-.37l-1.073.538c1.102.197 1.556-.784 2.339-.94.047-.318.051-.664.157-.932.053-.135.29-.127.649-.259l-.43.581c.066.037.146.116.182.097.383-.195.837-.19 1.12-.67.208-.354.716-.234 1.02-.629.351-.457.966-.582 1.43-.916l1.369-.989c.639-.543 1.379-.922 2.022-1.459s1.475-.725 1.982-1.504c.255-.392.73-.394 1.057-.745.692-.741 1.547-1.255 2.32-1.885.413-.336.759-.774 1.255-.985.593-.252.856-.757.865-1.51l.387.458.117-.326.191.11c.303-.29.525-.663.84-.765.431-.141.541-.62 1.036-.97.951-.078 1.415-1.482 2.481-1.883l-.243-.983.504.534c.811-.502 1.329-1.181 1.795-1.935l-.134-.363c.182.043.331.116.461.101.172-.021.328-.11.519-.181l.138-.613.861-.317-.056-.584.445.164.31-.884-.246-.876.843.795c.47-.525.832-1.18 1.427-1.579.525-.351.776-1.134 1.291-1.585.284-.249.379-.818.844-.856.041-.512.385-.684.636-.972.314-.359.88-.416.978-.999s.765-.518.725-1.199c.381-.21.566-.709.887-.96.37-.289.609-.637.787-1.118.057-.154.265-.196.459-.327zM.034 61.77c.081.103.272.251.275.361.028 1.161.619 2.101 1.145 3.062.434.791.854 1.633 1.485 2.202 1.17 1.053 2.189 2.506 3.64 2.861.34.82 1.188.365 1.525 1.193.802.183 1.497.862 2.259 1.232l1.422.752c.181.105.399.052.668.079l.624.737 1.181.435.34.818.399.041c.374.438-.075.448-.131.662.486.598 1.063.879 1.696 1.082l.609-1.364-.648-1.757.195-.724c-.387-.801-.508-1.724-1.115-2.452-.292-.349-.51-.811-.895-1.013-.246-.129-.349-.614-.716-.506-.081.024-.319-.45-.492-.687-.344-.471-.809-.678-1.22-.974l-2.994-1.943c-1.014-.526-2.001-1.223-3.064-1.512-.311-.085-.616-.348-.926-.515l-.991-.497.858-1.034.303.422c.812-.42 1.311-1.363 2.11-1.913l-.216-.586 1.632-1.519c.219-.212.656.224.845-.304l-.488-.103c.51-.057.517-1.276 1.359-.527.26-1.198 1.553-1.153 1.647-2.496l.307.179c.398-.43.764-.954 1.233-1.297.486-.357.375-1.188.962-1.623.697-.103 1.341-.622 1.707-1.55l-.135-1.189-.303-.313.182-.617-.976-.239.193-.653-.711-.23c-.158.789-.95.546-1.373 1.074-.594.743-1.454 1.148-2.161 1.76l-2.415 2.246-2.623 2.307c-.748.585-1.338 1.428-2.123 1.97-.115.589-.81.332-.925.92-.773.17-1.117 1.098-1.836 1.371-.143.054-.234.242-.368.332-.599.403-1.132.86-.958 2.038z"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="d-flex w-100 justify-content-center overflow-hidden text-primary">
+<svg class="flex-shrink-0" width="3000" height="18" xmlns="http://www.w3.org/2000/svg">
+<svg width="3000" height="18" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff944d" />
+      <stop offset="20%" style="stop-color:#ff7242" />
+      <stop offset="30%" style="stop-color:#ff5419" />
+      <stop offset="50%" style="stop-color:#ff4000" />
+      <stop offset="70%" style="stop-color:#ff4000" />
+      <stop offset="100%" style="stop-color:#ff4000" />
+      <!-- Add more stops if needed -->
+    </linearGradient>
+  </defs>
+  <polygon fill="url(#gradient)" points="3000,0 3000,12.3 2751,7.2 2460,18 2239,7.2 2017,10.7 1911.5,7.2 1368,18 831,7.2 540,18 319,7.2 97,10.7 0,7.5 0,0 "></polygon>
+</svg>
+</svg>
+</div>
+</main>
+
+<footer class="footer bg-secondary py-5">
+<div class="container pt-md-2 pt-lg-3 pt-xl-4">
+<div class="row pb-4 pb-md-5 pt-sm-2 mb-lg-2">
+<div class="col-md-4 col-lg-3 pb-2 pb-md-0 mb-4 mb-md-0"><a class="navbar-brand text-nav py-0 mb-3 mb-md-4" href="https://www.toolsclub.net/"><img style="width:162px" src="./cdn/toolsclub.png"></a>
+<p class="fs-sm pb-2 pb-md-3 mb-3">Toolsclub Là Nơi Mua Chung Tools Semrush, Ahref, Canva. Các Tool SEO, Design, Marketing,... Hàng Đầu, Đáng Tin Cậy.</p>
+<div class="d-flex">
+<a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3" target="_blank" href="https://facebook.com/toolsclub.net"><i class="ai-facebook"></i></a>
+<a class="btn btn-icon btn-sm btn-secondary btn-tumblr rounded-circle me-3" target="_blank" href="https://instagram.com/toolsclubnet"><i class="ai-instagram"></i></a>
+<a class="btn btn-icon btn-sm btn-secondary btn-tiktok rounded-circle me-3" target="_blank" href="https://www.tiktok.com/@toolsclub.net"><i class="ai-tiktok"></i></a>
+<a class="btn btn-icon btn-sm btn-secondary btn-twitch rounded-circle" target="_blank" href="https://t.me/toolsclubnet/"><i class="ai-telegram"></i></a>
+</div>
+</div>
+<div class="col-md-8 col-lg-7 col-xl-6 offset-lg-2 offset-xl-3">
+<div class="row row-cols-1 row-cols-sm-3">
+<div class="col mb-3 mb-md-0">
+<ul class="nav flex-column">
+<li><a class="nav-link fw-normal py-1 px-0" href="javascript:void(0)">Điều khoản sử dụng</a></li>
+<!-- <li><a class="nav-link fw-normal py-1 px-0" href="agreement/refund.html">Refund Policy</a></li> -->
+<li><a class="nav-link fw-normal py-1 px-0" href="javascript:void(0)">Chính sách bảo mật</a></li>
+<li><a class="nav-link fw-normal py-1 px-0" href="javascript:void(0)">Về chúng tôi</a></li>
+</ul>
+</div>
+<div class="col mb-4 mb-md-0">
+<ul class="nav flex-column">
+<li><a class="nav-link fw-normal py-1 px-0" href="https://app.toolsclub.net/">Bảng điều khiển</a></li>
+<li><a class="nav-link fw-normal py-1 px-0" href="https://app.toolsclub.net/signup/">Đăng ký</a></li>
+<li><a class="nav-link fw-normal py-1 px-0" href="https://app.toolsclub.net/forgetpassword">Quên mật khẩu</a></li>
+</ul>
+</div>
+<div class="col"><a class="btn btn-secondary px-3 py-2 mb-3 me-3 me-md-0"><img class="mx-1 d-dark-mode-none" src="assets/img/root/ios-dark.png" width="120" alt="App Store"><img class="mx-1 d-none d-dark-mode-block" src="assets/img/root/ios-light.png" width="120" alt="App Store"></a><a class="btn btn-secondary px-3 py-2 mb-3 me-3 me-md-0"><img class="mx-1 d-dark-mode-none" src="assets/img/root/win-dark.png" width="119" alt=""><img class="mx-1 d-none d-dark-mode-block" src="assets/img/root/win-white.png" width="119" alt="Google Play"></a></div>
+</div>
+</div>
+</div>
+<div class="d-sm-flex align-items-center pt-4">
+<p class="fs-sm mb-0"><span class="text-muted">© 2023 Toolsclub | Made with <span class="text-danger">❤</span> by human in 🐉 Vietnam.</span></p><img class="ms-sm-auto" src="assets/img/root/gulabo.png" width="400" alt="Accepted cards">
+</div>
+</div>
+</footer> <a class="btn-scroll-top" href="#top" data-scroll="">
+<svg viewbox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+</svg><i class="ai-arrow-up"></i></a>
+
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" type="ecbeee5df665b5b013cfecc8-text/javascript"></script>
+<script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js" type="ecbeee5df665b5b013cfecc8-text/javascript"></script>
+<script src="assets/vendor/aos/dist/aos.js" type="ecbeee5df665b5b013cfecc8-text/javascript"></script>
+<script src="assets/vendor/parallax-js/dist/parallax.min.js" type="ecbeee5df665b5b013cfecc8-text/javascript"></script>
+
+<script src="assets/js/theme.min.js" type="ecbeee5df665b5b013cfecc8-text/javascript"></script>
+<script src="assets/js/rocket-loader.min.js" data-cf-settings="ecbeee5df665b5b013cfecc8-|49" defer=""></script>
+
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat"></div>
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "125494207322140");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml: true,
+      version: 'v18.0'
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+  document.getElementById('policy-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('faq').scrollIntoView({behavior: 'smooth'});
+  });
+  
+  document.getElementById('about-us').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+
+<script>
+  let logos = document.querySelectorAll('.floating-logo');
+  
+  let windowWidth = window.innerWidth;
+  let windowHeight = window.innerHeight;
+
+  logos.forEach(logo => {
+
+    let parentDiv = logo.parentElement;
+    let parentWidth = parentDiv.clientWidth;
+    let parentHeight = parentDiv.clientHeight;
+
+    let logoWidth = logo.clientWidth;
+
+    let x = Math.random() * windowWidth - logoWidth - 50;
+    let y = Math.random() * windowHeight;
+    let dx = (Math.random() - 0.5) * 2;
+    let dy = (Math.random() - 0.5) * 2;
+
+    const animate = () => {
+      if (x < 0 - logoWidth || x > parentWidth + logoWidth) dx = -dx;
+      if (y < 0 || y > parentHeight) dy = -dy;
+
+      x += dx;
+      y += dy;
+
+      dx += (Math.random() - 0.5) / 10;
+      dy += (Math.random() - 0.5) / 10;
+
+      // Limit dx and dy to be within -2 to 2
+      dx = Math.max(Math.min(dx, 2), -2);
+      dy = Math.max(Math.min(dy, 2), -2);
+
+      logo.style.transform = `translate(${x}px, ${y}px)`;
+
+      window.requestAnimationFrame(animate);
+    }
+
+    window.requestAnimationFrame(animate);
+  });
+</script>
+
+
+
+</body>
 </html>

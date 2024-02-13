@@ -1,0 +1,61 @@
+/* Moving brand name */
+
+
+@keyframes TC_custom_brand_slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.TC_custom_logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;  
+  white-space: nowrap;
+  position: relative;
+}
+
+.TC_custom_logos:before,
+.TC_custom_logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.TC_custom_logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.TC_custom_logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+/*.TC_custom_logos:hover .TC_custom_logos-slide {
+  animation-play-state: paused;
+}*/
+
+.TC_custom_logos-slide {
+  display: inline-block;
+  animation: 25s TC_custom_brand_slide infinite linear;
+}
+
+.TC_custom_logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+
+/* end */
+
+
+/* parallax */ 
+
+/* end */

@@ -1,0 +1,134 @@
+.free-sample-button {
+  border: 2px solid black !important;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: black !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(39deg, white, #ff944d, #ff4000);
+}
+
+.dark-mode .free-sample-button:hover {
+  box-shadow: 0.4rem 0.4rem 0 gray;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+
+.free-sample-button:hover {
+  background-color: #ff4000;
+  border-color: black;
+  color: black;
+
+  box-shadow: 0.4rem 0.4rem 0 black;
+  transform: translate(-0.4rem, -0.4rem);
+  border: 2px solid black;
+}
+
+
+
+/*
+====================================================== 
+====================================================== 
+Moving brand name 
+======================================================
+======================================================
+*/
+
+.dark-mode .TC_custom_logos {
+  background-color: rgba(var(--ar-body-bg-rgb), 0.975) !important;
+}
+
+.dark-mode .TC_custom_logos:before {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(var(--ar-body-bg-rgb), 0.975) 95%, rgba(var(--ar-body-bg-rgb), 0.975));
+}
+
+.dark-mode .TC_custom_logos:after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(var(--ar-body-bg-rgb), 0.975) 95%, rgba(var(--ar-body-bg-rgb), 0.975));
+}
+
+@keyframes TC_custom_brand_slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.TC_custom_logos {
+  overflow: hidden;
+  padding: 30px 0;
+  background: var(--ar-secondary-bg);  
+  white-space: nowrap;
+  position: relative;
+}
+
+.TC_custom_logos:before,
+.TC_custom_logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.TC_custom_logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white 95%, white);
+}
+
+.TC_custom_logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 95%, white);
+}
+
+/*.TC_custom_logos:hover .TC_custom_logos-slide {
+  animation-play-state: paused;
+}*/
+
+.TC_custom_logos-slide {
+  display: inline-block;
+  animation: 25s TC_custom_brand_slide infinite linear;
+}
+
+.TC_custom_logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+
+/* 
+====================================================== 
+====================================================== 
+END
+======================================================
+======================================================
+*/
+
+
+
+
+/* 
+====================================================== 
+====================================================== 
+floating svg at background
+======================================================
+======================================================
+*/
+
+.floating-logo {
+  position: absolute;
+  z-index: 3; 
+  transition: left 0.1s ease-in, top 0.1s ease-in;
+}
+/* 
+====================================================== 
+====================================================== 
+END
+======================================================
+======================================================
+*/
