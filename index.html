@@ -103,6 +103,7 @@
 <li><a class="dropdown-item" href="#" id="about-us">Về chúng tôi</a></li>
 </ul>
 </li>
+<li class="nav-item"><a class="nav-link" href="#" id="see-pricing">Bảng giá</a></li>
 </ul>
 <div class="d-sm-none p-3 mt-n3">
 <a class="btn btn-primary w-100  mb-1" href="https://app.toolsclub.net/"><i class="ai-login fs-xl me-2 ms-n1"></i>Đăng nhập</a>
@@ -259,7 +260,7 @@
 <path class="text-primary" fill-rule="evenodd" clip-rule="evenodd" d="M28.5447 35.5859H39.1229C40.4072 35.5859 41.451 34.5452 41.451 33.2609C41.451 31.9765 40.4072 30.9327 39.1229 30.9327H28.5447C27.2604 30.9327 26.2197 31.9765 26.2197 33.2609C26.2197 34.5452 27.2604 35.5859 28.5447 35.5859ZM28.5448 51.1926H45.5573C46.8417 51.1926 47.8854 50.152 47.8854 48.8676C47.8854 47.5833 46.8417 46.5395 45.5573 46.5395H28.5448C27.2605 46.5395 26.2198 47.5833 26.2198 48.8676C26.2198 50.152 27.2605 51.1926 28.5448 51.1926Z" fill="currentColor"></path>
 </svg>
 <h3 class="h4 mb-2">Chất Lượng Tối Ưu</h3>
-<p>Giao diện sử dụng thân thiện, dễ dàng dùng ngay lập tức với tốc độ cao giúp công việc không gián đoạn.</p>
+<p id="pricing">Giao diện sử dụng thân thiện, dễ dàng dùng ngay lập tức với tốc độ cao giúp công việc không gián đoạn.</p>
 </div>
 </div>
 
@@ -559,6 +560,11 @@
   document.getElementById('about-us').addEventListener('click', function(event) {
     event.preventDefault();
     document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('see-pricing').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('pricing').scrollIntoView({behavior: 'smooth'});
   });
 </script>
 
